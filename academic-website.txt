@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alice Smith Academic Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #f9f7f6;
+      color: #333;
+    }
+    a { text-decoration: none; }
+    h1,h2,h3 { margin: 0 0 10px; }
+    .container { width: 90%; max-width: 1200px; margin: auto; }
+
+    /* Hero Section */
+    .hero {
+      background: url('your-team-hero-image.jpg') center/cover no-repeat;
+      color: #fff;
+      text-align: center;
+      padding: 120px 20px 60px;
+    }
+    .hero h1 { font-size: 3em; font-weight: 700; }
+    .hero p { font-size: 1.3em; margin: 20px 0; }
+    .hero .btn {
+      background: #d4a017;
+      color: #fff;
+      padding: 15px 30px;
+      border-radius: 5px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    .hero .btn:hover { background: #b88f0f; }
+
+    /* Section Titles */
+    .section-title { text-align: center; margin: 60px 0 40px; font-size: 2em; font-weight: 700; }
+
+    /* Professors */
+    .team {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-bottom: 60px;
+    }
+    .prof-card {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .prof-card img { width: 100%; border-radius: 10px; }
+    .prof-card h3 { margin: 15px 0 5px; }
+    .prof-card p { margin: 5px 0; }
+    .prof-card .rate {
+      font-weight: 700;
+      margin: 10px 0;
+      color: #d4a017;
+    }
+    .prof-card .btn { background: #0c4a6e; color: #fff; padding: 10px 20px; border-radius: 5px; margin-top: 10px; display: inline-block; }
+    .prof-card .btn:hover { background: #08304d; }
+
+    /* Services */
+    .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; text-align: center; margin-bottom: 60px; }
+    .service-card { background: #fff; border-radius: 10px; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+    .service-card h4 { margin-bottom: 10px; }
+    .service-card p { font-size: 0.95em; }
+
+    /* Reviews */
+    .reviews { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-bottom: 60px; }
+    .review-card { background: #fff; border-radius: 10px; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); text-align: center; }
+    .review-card img { width: 80px; height: 80px; border-radius: 50%; margin-bottom: 15px; }
+    .review-card p { font-size: 0.95em; }
+
+    /* Process */
+    .process { display: flex; flex-wrap: wrap; justify-content: space-around; text-align: center; margin-bottom: 60px; }
+    .process-step { width: 250px; margin: 20px; }
+    .process-step h4 { margin-bottom: 10px; }
+
+    /* Contact */
+    .contact { background: #0c4a6e; color: #fff; padding: 60px 20px; text-align: center; }
+    .contact input, .contact textarea {
+      width: 100%; max-width: 400px;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: none;
+    }
+    .contact button { background: #d4a017; color: #0c4a6e; padding: 15px 30px; border-radius: 5px; font-weight: 700; cursor: pointer; }
+    .contact button:hover { background: #b88f0f; }
+
+    /* Footer */
+    footer { text-align: center; padding: 20px 0; font-size: 0.9em; background: #f1f1f1; }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Learn From Our Expert Academic Team</h1>
+      <p>Personalized tutoring, writing, and research guidance across disciplines.</p>
+      <a href="#contact" class="btn">Get Started</a>
+    </div>
+  </section>
+
+  <!-- Professors -->
+  <section class="container">
+    <h2 class="section-title">Meet Our Professors</h2>
+    <div class="team">
+      <div class="prof-card">
+        <img src="alice.jpg" alt="Alice Smith">
+        <h3>Alice Smith</h3>
+        <p>Academic Writing & Research Methodology</p>
+        <p class="rate">£35/hr</p>
+        <a href="#contact" class="btn">Book a Session</a>
+      </div>
+      <div class="prof-card">
+        <img src="michael.jpg" alt="Dr. Michael Lee">
+        <h3>Dr. Michael Lee</h3>
+        <p>Mathematics & Statistics</p>
+        <p class="rate">£40/hr</p>
+        <a href="#contact" class="btn">Book a Session</a>
+      </div>
+      <div class="prof-card">
+        <img src="emily.jpg" alt="Prof. Emily Carter">
+        <h3>Prof. Emily Carter</h3>
+        <p>Literature & Humanities</p>
+        <p class="rate">£38/hr</p>
+        <a href="#contact" class="btn">Book a Session</a>
+      </div>
+      <div class="prof-card">
+        <img src="rajiv.jpg" alt="Dr. Rajiv Patel">
+        <h3>Dr. Rajiv Patel</h3>
+        <p>Physics & Engineering</p>
+        <p class="rate">£42/hr</p>
+        <a href="#contact" class="btn">Book a Session</a>
+      </div>
+      <div class="prof-card">
+        <img src="laura.jpg" alt="Dr. Laura Chen">
+        <h3>Dr. Laura Chen</h3>
+        <p>Psychology & Social Sciences</p>
+        <p class="rate">£37/hr</p>
+        <a href="#contact" class="btn">Book a Session</a>
+      </div>
+      <div class="prof-card">
+        <img src="omar.jpg" alt="Dr. Omar Hassan">
+        <h3>Dr. Omar Hassan</h3>
+        <p>Economics & Finance</p>
+        <p class="rate">£39/hr</p>
+        <a href="#contact" class="btn">Book a Session</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="container">
+    <h2 class="section-title">Our Academic Services</h2>
+    <div class="services">
+      <div class="service-card">
+        <h4>Academic Writing & Editing</h4>
+        <p>Essays, research papers, & thesis help</p>
+      </div>
+      <div class="service-card">
+        <h4>Tutoring & Coaching</h4>
+        <p>One-on-one exam & coursework support</p>
+      </div>
+      <div class="service-card">
+        <h4>Research & Data Assistance</h4>
+        <p>Data analysis & sourcing references</p>
+      </div>
+      <div class="service-card">
+        <h4>Exam & Test Preparation</h4>
+        <p>Tailored strategies for test success</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="container">
+    <h2 class="section-title">Students Who Succeeded</h2>
+    <div class="reviews">
+      <div class="review-card">
+        <img src="emma.jpg" alt="Emma">
+        <p>Helped me ace my statistics exam. Couldn't have done it without them.</p>
+      </div>
+      <div class="review-card">
+        <img src="sarah.jpg" alt="Sarah">
+        <p>Improved my grades thanks to the amazing support from the professors!</p>
+      </div>
+      <div class="review-card">
+        <img src="tom.jpg" alt="Tom">
+        <p>The guidance on my research paper was invaluable. Highly recommend.</p>
+      </div>
+      <div class="review-card">
+        <img src="jessica.jpg" alt="Jessica">
+        <p>A stress-free semester thanks to the one-on-one tutoring sessions!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="container">
+    <h2 class="section-title">How It Works</h2>
+    <div class="process">
+      <div class="process-step">
+        <h4>1. Contact Us</h4>
+        <p>Share your academic requirements.</p>
+      </div>
+      <div class="process-step">
+        <h4>2. Personalized Plan</h4>
+        <p>We create a tailored tutoring or writing plan.</p>
+      </div>
+      <div class="process-step">
+        <h4>3. Review & Improve</h4>
+        <p>Get final feedback and refined work.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <h2 class="section-title">Get in Touch</h2>
+    <p>Choose your professor or subject and send your message below:</p>
+    <form>
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="text" name="subject" placeholder="Professor or Subject" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <br>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2026 Alice Smith Academic Services. All rights reserved.
+  </footer>
+
+</body>
+</html>
